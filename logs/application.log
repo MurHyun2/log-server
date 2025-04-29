@@ -1,0 +1,478 @@
+2025-04-28 15:11:55.961 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Starting LogServerApplication using Java 17.0.14 with PID 24560 (C:\Users\SSAFY\Desktop\log-server\build\classes\java\main started by SSAFY in C:\Users\SSAFY\Desktop\log-server)
+2025-04-28 15:11:55.963 [restartedMain] DEBUG c.s.l.e.server.LogServerApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-28 15:11:55.964 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 15:11:56.012 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-28 15:11:56.013 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-28 15:11:57.086 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-28 15:11:57.094 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-28 15:11:57.096 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-28 15:11:57.148 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-28 15:11:57.149 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1135 ms
+2025-04-28 15:11:57.686 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-28 15:11:57.701 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-28 15:11:57.756 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-28 15:11:57.767 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Started LogServerApplication in 2.476 seconds (process running for 3.191)
+2025-04-28 15:11:58.025 [RMI TCP Connection(3)-192.168.31.54] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-28 15:11:58.026 [RMI TCP Connection(3)-192.168.31.54] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-28 15:11:58.028 [RMI TCP Connection(3)-192.168.31.54] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-28 15:11:58.335 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:11:58.335 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:11:58.341 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:11:58.341 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:11:58.347 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:11:59.346 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:11:59.346 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:11:59.361 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:11:59.361 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:11:59.364 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:00.355 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:00.355 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:00.358 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:00.358 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:00.369 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:00.368 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:00.372 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:00.372 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:00.374 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:00.374 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:01.368 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:01.368 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:01.384 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:01.384 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:01.386 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:02.378 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:02.378 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:02.382 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:02.382 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:02.394 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:02.394 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:02.398 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:02.398 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:02.401 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:02.401 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:03.390 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:03.390 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:03.406 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:03.406 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:03.409 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:04.409 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:04.409 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:04.413 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:04.413 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:04.425 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:04.425 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:04.428 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:04.428 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:04.432 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:04.432 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:05.428 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:05.428 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:05.448 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:05.448 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:05.452 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:06.433 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:06.433 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:06.437 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:06.437 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:06.452 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:06.452 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:06.455 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:06.456 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:06.458 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:06.461 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:07.449 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:07.449 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:07.465 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:07.465 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:07.467 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:08.453 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:08.453 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:08.455 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:08.455 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:08.469 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:08.470 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:08.472 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:08.472 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:08.474 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:08.474 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:09.461 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:09.462 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:09.476 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:09.479 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:09.479 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:10.477 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:10.477 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:10.481 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:10.481 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:10.493 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:10.493 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:10.497 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:10.497 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:10.501 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:10.501 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:11.491 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:11.491 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:11.506 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:11.506 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:11.509 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:12.505 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:12.505 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:12.508 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:12.508 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:12.519 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:12.519 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:12.525 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:12.525 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:12.527 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:12.527 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:13.521 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:13.521 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:13.536 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:13.536 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:13.538 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:14.537 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:14.537 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:14.540 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:14.540 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:14.551 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:14.551 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:14.554 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:14.554 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:14.556 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:14.556 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:15.551 [pool-2-thread-1] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:15.551 [pool-2-thread-2] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:15.567 [pool-2-thread-4] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:15.567 [pool-2-thread-3] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:15.569 [pool-2-thread-5] ERROR c.c.logger.service.LogSenderService - Failed to send log: 404
+2025-04-28 15:12:38.897 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Starting LogServerApplication using Java 17.0.14 with PID 33424 (C:\Users\SSAFY\Desktop\log-server\build\classes\java\main started by SSAFY in C:\Users\SSAFY\Desktop\log-server)
+2025-04-28 15:12:38.899 [restartedMain] DEBUG c.s.l.e.server.LogServerApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-28 15:12:38.899 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 15:12:38.935 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-28 15:12:38.935 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-28 15:12:39.876 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-28 15:12:39.885 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-28 15:12:39.886 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-28 15:12:39.921 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-28 15:12:39.921 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 985 ms
+2025-04-28 15:12:40.308 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-28 15:12:40.311 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-28 15:12:40.352 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-28 15:12:40.365 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Started LogServerApplication in 1.91 seconds (process running for 2.558)
+2025-04-28 15:12:40.680 [RMI TCP Connection(1)-192.168.31.54] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-28 15:12:40.680 [RMI TCP Connection(1)-192.168.31.54] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-28 15:12:40.682 [RMI TCP Connection(1)-192.168.31.54] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-28 15:14:38.334 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Starting LogServerApplication using Java 17.0.14 with PID 5028 (C:\Users\SSAFY\Desktop\log-server\build\classes\java\main started by SSAFY in C:\Users\SSAFY\Desktop\log-server)
+2025-04-28 15:14:38.336 [restartedMain] DEBUG c.s.l.e.server.LogServerApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-28 15:14:38.337 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 15:14:38.390 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-28 15:14:38.390 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-28 15:14:39.352 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-28 15:14:39.360 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-28 15:14:39.360 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-28 15:14:39.396 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-28 15:14:39.397 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1007 ms
+2025-04-28 15:14:39.834 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-28 15:14:39.838 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-28 15:14:39.878 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-28 15:14:39.889 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Started LogServerApplication in 1.995 seconds (process running for 2.628)
+2025-04-28 15:14:40.186 [RMI TCP Connection(1)-192.168.31.54] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-28 15:14:40.186 [RMI TCP Connection(1)-192.168.31.54] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-28 15:14:40.187 [RMI TCP Connection(1)-192.168.31.54] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-28 15:15:03.357 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Starting LogServerApplication using Java 17.0.14 with PID 29872 (C:\Users\SSAFY\Desktop\log-server\build\classes\java\main started by SSAFY in C:\Users\SSAFY\Desktop\log-server)
+2025-04-28 15:15:03.359 [restartedMain] DEBUG c.s.l.e.server.LogServerApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-28 15:15:03.359 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 15:15:03.402 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-28 15:15:03.402 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-28 15:15:04.267 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-28 15:15:04.275 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-28 15:15:04.275 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-28 15:15:04.321 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-28 15:15:04.321 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 919 ms
+2025-04-28 15:15:04.728 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-28 15:15:04.730 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-28 15:15:04.769 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-28 15:15:04.779 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Started LogServerApplication in 1.778 seconds (process running for 2.246)
+2025-04-28 15:15:05.330 [RMI TCP Connection(4)-192.168.31.54] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-28 15:15:05.331 [RMI TCP Connection(4)-192.168.31.54] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-28 15:15:05.332 [RMI TCP Connection(4)-192.168.31.54] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-28 15:15:16.805 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-04-28 15:15:37.606 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-04-28 15:43:16.602 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Starting LogServerApplication using Java 17.0.14 with PID 22384 (C:\Users\SSAFY\Desktop\log-server\build\classes\java\main started by SSAFY in C:\Users\SSAFY\Desktop\log-server)
+2025-04-28 15:43:16.603 [restartedMain] DEBUG c.s.l.e.server.LogServerApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-28 15:43:16.604 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 15:43:16.642 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-28 15:43:16.642 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-28 15:43:17.493 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-28 15:43:17.503 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-28 15:43:17.503 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-28 15:43:17.560 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-28 15:43:17.560 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 918 ms
+2025-04-28 15:43:18.147 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-28 15:43:18.153 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-28 15:43:18.217 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-28 15:43:18.231 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Started LogServerApplication in 2.004 seconds (process running for 2.479)
+2025-04-28 15:43:18.577 [RMI TCP Connection(4)-192.168.31.54] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-28 15:43:18.578 [RMI TCP Connection(4)-192.168.31.54] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-28 15:43:18.579 [RMI TCP Connection(4)-192.168.31.54] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-28 15:44:42.888 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Starting LogServerApplication using Java 17.0.14 with PID 11132 (C:\Users\SSAFY\Desktop\log-server\build\classes\java\main started by SSAFY in C:\Users\SSAFY\Desktop\log-server)
+2025-04-28 15:44:42.889 [restartedMain] DEBUG c.s.l.e.server.LogServerApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-28 15:44:42.890 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 15:44:42.924 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-28 15:44:42.924 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-28 15:44:43.845 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-28 15:44:43.854 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-28 15:44:43.854 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-28 15:44:43.892 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-28 15:44:43.892 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 968 ms
+2025-04-28 15:44:44.314 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-28 15:44:44.317 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-28 15:44:44.377 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-28 15:44:44.390 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Started LogServerApplication in 1.84 seconds (process running for 2.33)
+2025-04-28 15:44:44.864 [RMI TCP Connection(3)-192.168.31.54] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-28 15:44:44.864 [RMI TCP Connection(3)-192.168.31.54] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-28 15:44:44.865 [RMI TCP Connection(3)-192.168.31.54] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-28 15:45:03.708 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Starting LogServerApplication using Java 17.0.14 with PID 29656 (C:\Users\SSAFY\Desktop\log-server\build\classes\java\main started by SSAFY in C:\Users\SSAFY\Desktop\log-server)
+2025-04-28 15:45:03.709 [restartedMain] DEBUG c.s.l.e.server.LogServerApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-28 15:45:03.710 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 15:45:03.745 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-28 15:45:03.745 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-28 15:45:04.620 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-28 15:45:04.629 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-28 15:45:04.630 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-28 15:45:04.679 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-28 15:45:04.679 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 934 ms
+2025-04-28 15:45:05.062 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-28 15:45:05.066 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-28 15:45:05.103 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-28 15:45:05.113 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Started LogServerApplication in 1.746 seconds (process running for 2.246)
+2025-04-28 15:45:05.652 [RMI TCP Connection(2)-192.168.31.54] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-28 15:45:05.652 [RMI TCP Connection(2)-192.168.31.54] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-28 15:45:05.654 [RMI TCP Connection(2)-192.168.31.54] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-28 15:46:27.443 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-04-28 15:46:27.528 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Starting LogServerApplication using Java 17.0.14 with PID 29656 (C:\Users\SSAFY\Desktop\log-server\build\classes\java\main started by SSAFY in C:\Users\SSAFY\Desktop\log-server)
+2025-04-28 15:46:27.528 [restartedMain] DEBUG c.s.l.e.server.LogServerApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-28 15:46:27.528 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 15:46:27.799 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-28 15:46:27.814 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 284 ms
+2025-04-28 15:46:27.915 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-28 15:46:27.918 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-28 15:46:27.929 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-28 15:46:27.936 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Started LogServerApplication in 0.427 seconds (process running for 85.067)
+2025-04-28 15:46:27.938 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-04-28 15:46:29.717 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Starting LogServerApplication using Java 17.0.14 with PID 20888 (C:\Users\SSAFY\Desktop\log-server\build\classes\java\main started by SSAFY in C:\Users\SSAFY\Desktop\log-server)
+2025-04-28 15:46:29.718 [restartedMain] DEBUG c.s.l.e.server.LogServerApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-28 15:46:29.719 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 15:46:29.752 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-28 15:46:29.753 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-28 15:46:30.602 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-28 15:46:30.612 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-28 15:46:30.612 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-28 15:46:30.664 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-28 15:46:30.665 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 911 ms
+2025-04-28 15:46:31.118 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-28 15:46:31.121 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-28 15:46:31.164 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-28 15:46:31.176 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Started LogServerApplication in 1.824 seconds (process running for 2.312)
+2025-04-28 15:46:31.604 [RMI TCP Connection(2)-192.168.31.54] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-28 15:46:31.605 [RMI TCP Connection(2)-192.168.31.54] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-28 15:46:31.606 [RMI TCP Connection(2)-192.168.31.54] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-28 15:47:44.972 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-04-28 16:10:31.391 [http-nio-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-04-28 16:12:17.862 [http-nio-8080-exec-2] WARN  c.s.l.e.s.controller.LogController - [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] Unable to start LiveReload server
+2025-04-28 16:12:17.862 [http-nio-8080-exec-1] INFO  c.s.l.e.s.controller.LogController - [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul'
+2025-04-28 16:12:17.875 [http-nio-8080-exec-8] INFO  c.s.l.e.s.controller.LogController - [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8081 (http) with context path '/'
+2025-04-28 16:12:17.875 [http-nio-8080-exec-6] INFO  c.s.l.e.s.controller.LogController - [jpabook.jpashop.JpashopApplication] Started JpashopApplication in 5.471 seconds (process running for 6.56)
+2025-04-28 16:12:41.828 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Starting LogServerApplication using Java 17.0.14 with PID 13152 (C:\Users\SSAFY\Desktop\log-server\build\classes\java\main started by SSAFY in C:\Users\SSAFY\Desktop\log-server)
+2025-04-28 16:12:41.829 [restartedMain] DEBUG c.s.l.e.server.LogServerApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-28 16:12:41.830 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 16:12:41.875 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-04-28 16:12:41.875 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-04-28 16:12:42.839 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-28 16:12:42.849 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-28 16:12:42.849 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-28 16:12:42.886 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-28 16:12:42.886 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1011 ms
+2025-04-28 16:12:43.340 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-28 16:12:43.346 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-28 16:12:43.393 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-28 16:12:43.407 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Started LogServerApplication in 1.976 seconds (process running for 2.509)
+2025-04-28 16:12:43.659 [RMI TCP Connection(4)-192.168.31.54] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-28 16:12:43.660 [RMI TCP Connection(4)-192.168.31.54] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-04-28 16:12:43.661 [RMI TCP Connection(4)-192.168.31.54] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-04-28 16:12:55.784 [http-nio-8080-exec-3] INFO  c.s.l.e.s.controller.LogController - [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+2025-04-28 16:12:55.784 [http-nio-8080-exec-2] INFO  c.s.l.e.s.controller.LogController - [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-04-28 16:12:55.796 [http-nio-8080-exec-5] INFO  c.s.l.e.s.controller.LogController - [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+2025-04-28 16:12:55.823 [http-nio-8080-exec-6] INFO  c.s.l.e.s.controller.LogController - [jpabook.jpashop.controller.HomeController] home controller
+2025-04-28 16:13:07.956 [http-nio-8080-exec-4] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824387944 | took 8ms | statement | connection 4| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+select m1_0.member_id,m1_0.city,m1_0.street,m1_0.zipcode,m1_0.name from member m1_0 where m1_0.name=?
+select m1_0.member_id,m1_0.city,m1_0.street,m1_0.zipcode,m1_0.name from member m1_0 where m1_0.name='SD L';
+2025-04-28 16:13:07.971 [http-nio-8080-exec-7] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824387969 | took 0ms | statement | connection 5| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+select next_val as id_val from member_seq for update
+select next_val as id_val from member_seq for update;
+2025-04-28 16:13:07.974 [http-nio-8080-exec-8] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824387972 | took 1ms | statement | connection 5| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+update member_seq set next_val= ? where next_val=?
+update member_seq set next_val= 51 where next_val=1;
+2025-04-28 16:13:07.993 [http-nio-8080-exec-9] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824387990 | took 17ms | commit | connection 5| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+
+;
+2025-04-28 16:13:08.031 [http-nio-8080-exec-10] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824388028 | took 0ms | statement | connection 4| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+insert into member (city,street,zipcode,name,member_id) values (?,?,?,?,?)
+insert into member (city,street,zipcode,name,member_id) values ('동구','금강로 21길10','41092','SD L',1);
+2025-04-28 16:13:08.039 [http-nio-8080-exec-1] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824388036 | took 2ms | commit | connection 4| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+
+;
+2025-04-28 16:13:08.048 [http-nio-8080-exec-2] INFO  c.s.l.e.s.controller.LogController - [jpabook.jpashop.controller.HomeController] home controller
+2025-04-28 16:13:17.761 [http-nio-8080-exec-5] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824397755 | took 0ms | commit | connection 6| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+
+;
+2025-04-28 16:13:17.762 [http-nio-8080-exec-3] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824397747 | took 0ms | statement | connection 6| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+select m1_0.member_id,m1_0.city,m1_0.street,m1_0.zipcode,m1_0.name from member m1_0
+select m1_0.member_id,m1_0.city,m1_0.street,m1_0.zipcode,m1_0.name from member m1_0;
+2025-04-28 16:13:19.021 [http-nio-8080-exec-6] INFO  c.s.l.e.s.controller.LogController - [jpabook.jpashop.controller.HomeController] home controller
+2025-04-28 16:13:25.429 [http-nio-8080-exec-7] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824405419 | took 0ms | statement | connection 8| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+update item_seq set next_val= ? where next_val=?
+update item_seq set next_val= 51 where next_val=1;
+2025-04-28 16:13:25.429 [http-nio-8080-exec-4] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824405419 | took 0ms | statement | connection 8| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+select next_val as id_val from item_seq for update
+select next_val as id_val from item_seq for update;
+2025-04-28 16:13:25.429 [http-nio-8080-exec-8] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824405419 | took 2ms | commit | connection 8| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+
+;
+2025-04-28 16:13:25.429 [http-nio-8080-exec-9] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824405429 | took 1ms | statement | connection 7| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+insert into item (name,price,stock_quantity,author,isbn,dtype,item_id) values (?,?,?,?,?,'B',?)
+insert into item (name,price,stock_quantity,author,isbn,dtype,item_id) values ('이대현',11,11,'11','11','B',1);
+2025-04-28 16:13:25.436 [http-nio-8080-exec-10] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824405429 | took 2ms | commit | connection 7| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+
+;
+2025-04-28 16:13:25.436 [http-nio-8080-exec-1] INFO  c.s.l.e.s.controller.LogController - [jpabook.jpashop.controller.HomeController] home controller
+2025-04-28 16:13:26.056 [http-nio-8080-exec-2] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824406048 | took 0ms | statement | connection 9| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+select m1_0.member_id,m1_0.city,m1_0.street,m1_0.zipcode,m1_0.name from member m1_0
+select m1_0.member_id,m1_0.city,m1_0.street,m1_0.zipcode,m1_0.name from member m1_0;
+2025-04-28 16:13:26.056 [http-nio-8080-exec-3] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824406048 | took 0ms | commit | connection 9| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+
+;
+2025-04-28 16:13:26.059 [http-nio-8080-exec-5] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824406059 | took 1ms | statement | connection 9| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+select i1_0.item_id,i1_0.dtype,i1_0.name,i1_0.price,i1_0.stock_quantity,i1_0.artist,i1_0.etc,i1_0.author,i1_0.isbn,i1_0.actor,i1_0.director from item i1_0
+select i1_0.item_id,i1_0.dtype,i1_0.name,i1_0.price,i1_0.stock_quantity,i1_0.artist,i1_0.etc,i1_0.author,i1_0.isbn,i1_0.actor,i1_0.director from item i1_0;
+2025-04-28 16:13:26.064 [http-nio-8080-exec-6] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824406059 | took 0ms | commit | connection 9| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+
+;
+2025-04-28 16:13:32.645 [http-nio-8080-exec-7] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824412620 | took 0ms | statement | connection 10| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+select m1_0.member_id,m1_0.city,m1_0.street,m1_0.zipcode,m1_0.name from member m1_0 where m1_0.member_id=?
+select m1_0.member_id,m1_0.city,m1_0.street,m1_0.zipcode,m1_0.name from member m1_0 where m1_0.member_id=1;
+2025-04-28 16:13:32.645 [http-nio-8080-exec-4] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824412628 | took 0ms | statement | connection 10| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+select i1_0.item_id,i1_0.dtype,i1_0.name,i1_0.price,i1_0.stock_quantity,i1_0.artist,i1_0.etc,i1_0.author,i1_0.isbn,i1_0.actor,i1_0.director from item i1_0 where i1_0.item_id=?
+select i1_0.item_id,i1_0.dtype,i1_0.name,i1_0.price,i1_0.stock_quantity,i1_0.artist,i1_0.etc,i1_0.author,i1_0.isbn,i1_0.actor,i1_0.director from item i1_0 where i1_0.item_id=1;
+2025-04-28 16:13:32.645 [http-nio-8080-exec-8] INFO  c.s.l.e.s.controller.LogController - [p6spy] #1745824412628 | took 0ms | rollback | connection 10| url jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul
+
+;
+2025-04-28 16:13:32.677 [http-nio-8080-exec-9] ERROR c.s.l.e.s.controller.LogController - [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: jpabook.jpashop.exception.NotEnoughStockException: need more stock] with root cause - need more stock
+2025-04-28 16:13:32.677 [http-nio-8080-exec-9] ERROR c.s.l.e.s.controller.LogController - Exception: jpabook.jpashop.exception.NotEnoughStockException - need more stock
+2025-04-28 16:14:53.806 [http-nio-8080-exec-3] INFO  c.s.l.e.s.controller.LogController - [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-28 16:14:54.140 [http-nio-8080-exec-5] INFO  c.s.l.e.s.controller.LogController - [org.springframework.boot.web.embedded.tomcat.GracefulShutdown] Graceful shutdown complete
+2025-04-28 16:14:54.144 [http-nio-8080-exec-6] INFO  c.s.l.e.s.controller.LogController - [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-28 16:14:54.147 [http-nio-8080-exec-7] INFO  c.s.l.e.s.controller.LogController - [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+2025-04-28 16:14:54.157 [http-nio-8080-exec-4] INFO  c.s.l.e.s.controller.LogController - [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+2025-04-28 16:15:01.918 [http-nio-8080-exec-9] INFO  c.s.l.e.s.controller.LogController - [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] H2 console available at '/h2-console'. Database available at 'jdbc:mysql://127.0.0.1:3306/jpatest?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul'
+2025-04-28 16:15:01.943 [http-nio-8080-exec-10] WARN  c.s.l.e.s.controller.LogController - [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] Unable to start LiveReload server
+2025-04-28 16:15:01.975 [http-nio-8080-exec-2] INFO  c.s.l.e.s.controller.LogController - [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8081 (http) with context path '/'
+2025-04-28 16:15:01.983 [http-nio-8080-exec-1] INFO  c.s.l.e.s.controller.LogController - [jpabook.jpashop.JpashopApplication] Started JpashopApplication in 5.129 seconds (process running for 5.693)
+2025-04-28 16:18:59.751 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 3 deletions, 0 modifications)
+2025-04-28 16:18:59.835 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Starting LogServerApplication using Java 17.0.14 with PID 13152 (C:\Users\SSAFY\Desktop\log-server\build\classes\java\main started by SSAFY in C:\Users\SSAFY\Desktop\log-server)
+2025-04-28 16:18:59.836 [restartedMain] DEBUG c.s.l.e.server.LogServerApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-28 16:18:59.836 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 16:19:00.204 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-28 16:19:00.205 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-28 16:19:00.205 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-28 16:19:00.224 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-28 16:19:00.224 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 386 ms
+2025-04-28 16:19:00.353 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-28 16:19:00.356 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-28 16:19:00.372 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-28 16:19:00.379 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Started LogServerApplication in 0.569 seconds (process running for 379.482)
+2025-04-28 16:19:00.381 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-04-28 16:19:01.778 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
+2025-04-28 16:19:01.890 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Starting LogServerApplication using Java 17.0.14 with PID 13152 (C:\Users\SSAFY\Desktop\log-server\build\classes\java\main started by SSAFY in C:\Users\SSAFY\Desktop\log-server)
+2025-04-28 16:19:01.891 [restartedMain] DEBUG c.s.l.e.server.LogServerApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-28 16:19:01.891 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 16:19:02.165 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-28 16:19:02.167 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-28 16:19:02.167 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-28 16:19:02.188 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-28 16:19:02.188 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 295 ms
+2025-04-28 16:19:02.277 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-28 16:19:02.279 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-28 16:19:02.290 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-28 16:19:02.296 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Started LogServerApplication in 0.432 seconds (process running for 381.399)
+2025-04-28 16:19:02.298 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-04-28 16:20:56.771 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (0 additions, 3 deletions, 0 modifications)
+2025-04-28 16:20:56.881 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Starting LogServerApplication using Java 17.0.14 with PID 13152 (C:\Users\SSAFY\Desktop\log-server\build\classes\java\main started by SSAFY in C:\Users\SSAFY\Desktop\log-server)
+2025-04-28 16:20:56.881 [restartedMain] DEBUG c.s.l.e.server.LogServerApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-28 16:20:56.881 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 16:20:57.169 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-28 16:20:57.169 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-28 16:20:57.169 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-28 16:20:57.183 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-28 16:20:57.183 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 300 ms
+2025-04-28 16:20:57.285 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-28 16:20:57.287 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-28 16:20:57.298 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-28 16:20:57.307 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Started LogServerApplication in 0.453 seconds (process running for 496.409)
+2025-04-28 16:20:57.308 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-04-28 16:20:58.711 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
+2025-04-28 16:20:58.810 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Starting LogServerApplication using Java 17.0.14 with PID 13152 (C:\Users\SSAFY\Desktop\log-server\build\classes\java\main started by SSAFY in C:\Users\SSAFY\Desktop\log-server)
+2025-04-28 16:20:58.810 [restartedMain] DEBUG c.s.l.e.server.LogServerApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-28 16:20:58.810 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 16:20:59.113 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-28 16:20:59.114 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-28 16:20:59.114 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-28 16:20:59.126 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-28 16:20:59.126 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 314 ms
+2025-04-28 16:20:59.200 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-28 16:20:59.202 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-28 16:20:59.213 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-28 16:20:59.219 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Started LogServerApplication in 0.431 seconds (process running for 498.322)
+2025-04-28 16:20:59.220 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-04-28 16:21:06.755 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-04-28 16:21:06.857 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Starting LogServerApplication using Java 17.0.14 with PID 13152 (C:\Users\SSAFY\Desktop\log-server\build\classes\java\main started by SSAFY in C:\Users\SSAFY\Desktop\log-server)
+2025-04-28 16:21:06.857 [restartedMain] DEBUG c.s.l.e.server.LogServerApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-28 16:21:06.857 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 16:21:07.121 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-28 16:21:07.121 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-28 16:21:07.121 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-28 16:21:07.132 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-28 16:21:07.132 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 270 ms
+2025-04-28 16:21:07.207 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-28 16:21:07.215 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-28 16:21:07.223 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-28 16:21:07.232 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Started LogServerApplication in 0.403 seconds (process running for 506.338)
+2025-04-28 16:21:07.232 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-04-28 16:21:08.661 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-04-28 16:21:08.725 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Starting LogServerApplication using Java 17.0.14 with PID 13152 (C:\Users\SSAFY\Desktop\log-server\build\classes\java\main started by SSAFY in C:\Users\SSAFY\Desktop\log-server)
+2025-04-28 16:21:08.725 [restartedMain] DEBUG c.s.l.e.server.LogServerApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-28 16:21:08.725 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 16:21:09.023 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-28 16:21:09.023 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-28 16:21:09.023 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-28 16:21:09.040 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-28 16:21:09.040 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 315 ms
+2025-04-28 16:21:09.131 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-28 16:21:09.131 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-28 16:21:09.146 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-28 16:21:09.154 [restartedMain] INFO  c.s.l.e.server.LogServerApplication - Started LogServerApplication in 0.452 seconds (process running for 508.261)
+2025-04-28 16:21:09.154 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-04-28 16:22:18.800 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-04-28 16:22:18.885 [restartedMain] [] [] INFO  c.s.l.e.server.LogServerApplication - Starting LogServerApplication using Java 17.0.14 with PID 13152 (C:\Users\SSAFY\Desktop\log-server\build\classes\java\main started by SSAFY in C:\Users\SSAFY\Desktop\log-server)
+2025-04-28 16:22:18.886 [restartedMain] [] [] DEBUG c.s.l.e.server.LogServerApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-04-28 16:22:18.886 [restartedMain] [] [] INFO  c.s.l.e.server.LogServerApplication - No active profile set, falling back to 1 default profile: "default"
+2025-04-28 16:22:19.119 [restartedMain] [] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-04-28 16:22:19.120 [restartedMain] [] [] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-04-28 16:22:19.120 [restartedMain] [] [] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-04-28 16:22:19.130 [restartedMain] [] [] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-04-28 16:22:19.130 [restartedMain] [] [] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 243 ms
+2025-04-28 16:22:19.208 [restartedMain] [] [] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-04-28 16:22:19.209 [restartedMain] [] [] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-04-28 16:22:19.219 [restartedMain] [] [] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-04-28 16:22:19.227 [restartedMain] [] [] INFO  c.s.l.e.server.LogServerApplication - Started LogServerApplication in 0.365 seconds (process running for 578.33)
+2025-04-28 16:22:19.229 [restartedMain] [] [] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
