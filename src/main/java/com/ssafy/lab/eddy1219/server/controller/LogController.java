@@ -6,22 +6,25 @@ import com.ssafy.lab.eddy1219.server.model.LogEntry;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Map; // Map 임포트 추가
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedQueue;
 
 /**
- * 중앙 로그 서버의 로그 수신 엔드포인트를 담당하는 컨트롤러입니다.
- * POST /api/logs 로 로그 배치를 받아 콘솔에 형식화하여 출력합니다.
- * (수정됨: 모든 LogEntry 필드 출력하도록 보강)
+ * 중앙 로그 서버의 로그 수신 및 조회를 담당하는 컨트롤러입니다.
+ * POST /api/logs 로 로그 배치를 받아 저장하고 콘솔에 출력합니다.
+ * GET /api/logs 로 최근 수신된 로그 목록을 조회합니다.
  */
 @RestController
 @RequestMapping("/api/logs")
 public class LogController {
 
-    /**
-     * JSON 변환을 위한 ObjectMapper (Spring Boot가 자동으로 주입)
-     */
     private final ObjectMapper objectMapper;
+
+    // 최근 로그를 저장할 메모리 내 큐 (동시성 지원)
+    private static final int MAX_LOG_ENTRIES = 100; // 메모리에 보관할 최대 로그 수
+    private final Queue<LogEntry> recentLogs = new ConcurrentLinkedQueue<>();
 
     /**
      * 생성자를 통해 ObjectMapper를 주입받습니다.
@@ -33,7 +36,8 @@ public class LogController {
     }
 
     /**
-     * 로그 배치를 수신하여 콘솔에 상세 정보를 출력합니다.
+     * 로그 배치를 수신하여 저장하고 콘솔에 상세 정보를 출력합니다.
+     * (POST /api/logs)
      *
      * @param logEntries 로그 엔트리 객체 리스트
      * @return 처리 결과 (성공 시 200 OK)
@@ -47,6 +51,20 @@ public class LogController {
         }
 
         System.out.println("Received log batch with " + logEntries.size() + " entries.");
+
+        // 새 로그 추가 및 오래된 로그 제거 (큐 크기 제한)
+        for (LogEntry entry : logEntries) {
+            if (entry != null) { // 리스트 내 null 요소 방지
+                // 큐가 꽉 찼으면 가장 오래된 것 제거
+                while (recentLogs.size() >= MAX_LOG_ENTRIES) {
+                    recentLogs.poll();
+                }
+                // 새 로그 추가
+                recentLogs.offer(entry);
+            }
+        }
+
+        // --- 콘솔 출력 로직 ---
         try {
             // ObjectMapper를 사용하여 List<LogEntry>를 보기 좋게 포맷팅된 JSON 문자열로 변환
             String jsonOutput = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(logEntries);
@@ -59,20 +77,17 @@ public class LogController {
             System.out.println("Raw data (toString): " + logEntries);
         }
 
-        // --- List를 순회하며 각 로그 상세 정보 출력 ---
+        // --- List를 순회하며 각 로그 상세 정보 콘솔 출력 ---
         for (LogEntry logEntry : logEntries) {
             if (logEntry == null) continue; // 혹시 모를 null 요소 방지
 
-            // 로그 레벨에 따른 색상 설정
             String color = getColorForLevel(logEntry.getLevel());
             String reset = "\u001B[0m";
 
-            // 구분선 및 헤더 출력
             printSeparator(color, reset);
             System.out.printf("%s%s%s\n", color, centerText("LOG ENTRY", 100), reset);
             printSeparator(color, reset);
 
-            // --- 각 섹션별 정보 출력 ---
             printSection("Basic Info", color, reset);
             printField("Timestamp", logEntry.getTimestamp(), color, reset);
             printField("Level", logEntry.getLevel(), color, reset);
@@ -140,24 +155,20 @@ public class LogController {
                 printField("  Class", throwable.getClassName(), color, reset);
                 printField("  Message", throwable.getMessage(), color, reset);
 
-                // 원인 예외 정보 출력 (있는 경우)
                 if (throwable.getCause() != null) {
                     System.out.printf("%s%s%-18s%s\n", color, "  ", "Cause:", reset);
                     printField("    Class", throwable.getCause().getClassName(), color, reset);
                     printField("    Message", throwable.getCause().getMessage(), color, reset);
                 }
 
-                // 스택 트레이스 출력 (있는 경우)
                 if (throwable.getStackTrace() != null && throwable.getStackTrace().length > 0) {
                     System.out.printf("%s%s%-18s%s\n", color, "  ", "Stack Trace:", reset);
                     for (Object stackTraceElement : throwable.getStackTrace()) {
-                        // 스택 트레이스 각 라인 출력 (들여쓰기 추가)
                         System.out.printf("%s%s%s%s\n", color, "    ", stackTraceElement, reset);
                     }
                 }
             }
 
-            // 로그 항목 마무리
             printSeparator(color, reset);
             System.out.println(); // 로그 항목 사이에 빈 줄 추가
 
@@ -168,11 +179,20 @@ public class LogController {
     }
 
     /**
-     * 로그 레벨에 따른 ANSI 색상 코드를 반환합니다.
+     * 최근 수신된 로그 목록을 조회합니다.
+     * (GET /api/logs)
      *
-     * @param level 로그 레벨 문자열
-     * @return ANSI 색상 코드
+     * @return 최근 로그 엔트리 리스트 (JSON 형식)
      */
+    @GetMapping
+    public ResponseEntity<List<LogEntry>> getRecentLogs() {
+        // 현재 큐에 있는 로그를 리스트로 복사하여 반환 (순서는 들어온 순서)
+        List<LogEntry> logsToReturn = new LinkedList<>(recentLogs);
+        return ResponseEntity.ok(logsToReturn);
+    }
+
+    // --- Helper Methods ---
+
     private String getColorForLevel(String level) {
         if (level == null) return "\u001B[0m"; // 기본색
         return switch (level.toUpperCase()) {
@@ -185,40 +205,27 @@ public class LogController {
         };
     }
 
-    /**
-     * 구분선을 출력하는 헬퍼 메소드
-     */
     private void printSeparator(String color, String reset) {
         System.out.printf("%s%s%s\n", color, "=".repeat(100), reset);
     }
 
-    /**
-     * 섹션 제목을 출력하는 헬퍼 메소드
-     */
     private void printSection(String title, String color, String reset) {
         System.out.printf("%s%-20s%s\n", color, title + ":", reset);
     }
 
-    /**
-     * 필드 이름과 값을 형식에 맞게 출력하는 헬퍼 메소드 (null 처리 포함)
-     */
     private void printField(String fieldName, Object value, String color, String reset) {
-        // 값 포맷팅 (null일 경우 "N/A" 또는 빈 문자열)
         String formattedValue = (value != null) ? value.toString() : "N/A";
-        // 필드 이름이 들여쓰기 포함 여부에 따라 포맷 결정
-        if (fieldName.startsWith("  ")) { // 들여쓰기가 있는 경우
+        if (fieldName.startsWith("  ")) {
             System.out.printf("%s%s%-18s%s%s\n", color, fieldName.substring(0, 2), fieldName.substring(2).trim() + ":", reset, formattedValue);
-        } else { // 들여쓰기 없는 경우
+        } else {
             System.out.printf("%s%-20s%s%s\n", color, fieldName + ":", reset, formattedValue);
         }
     }
 
-    /**
-     * 텍스트를 가운데 정렬하는 헬퍼 메소드
-     */
     private String centerText(String text, int width) {
         if (text == null) text = "";
         int padding = width - text.length();
+        if (padding < 0) padding = 0; // 텍스트가 너비보다 길 경우
         int leftPadding = padding / 2;
         int rightPadding = padding - leftPadding;
         return " ".repeat(leftPadding) + text + " ".repeat(rightPadding);
